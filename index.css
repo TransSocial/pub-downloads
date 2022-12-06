@@ -9,13 +9,63 @@ body {
     color: #ffffff;
 }
 
-button {
-    font-family: 'Ubuntu', sans-serif;
+.btn {
+    border-radius: 300px;
+}
+
+.btn-primary {
+    border-color: #fb2576;
+    color: #fff;
     background-color: #fb2576;
-    border-radius: 6px;
-    border: none;
-    padding: 10px;
-    width: 200px;
-    cursor: pointer;
-    color: #ffffff;
-  }
+    -webkit-transition: all .35s;
+    -moz-transition: all .35s;
+    transition: all .35s;
+}
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary.focus,
+.btn-primary:active,
+.btn-primary.active,
+.open > .dropdown-toggle.btn-primary {
+    border-color: white;
+    color: #fb2576;
+    background-color: white;
+}
+
+.btn-primary:active,
+.btn-primary.active,
+.open > .dropdown-toggle.btn-primary {
+    background-image: none;
+}
+
+.btn-primary.disabled,
+.btn-primary[disabled],
+fieldset[disabled] .btn-primary,
+.btn-primary.disabled:hover,
+.btn-primary[disabled]:hover,
+fieldset[disabled] .btn-primary:hover,
+.btn-primary.disabled:focus,
+.btn-primary[disabled]:focus,
+fieldset[disabled] .btn-primary:focus,
+.btn-primary.disabled.focus,
+.btn-primary[disabled].focus,
+fieldset[disabled] .btn-primary.focus,
+.btn-primary.disabled:active,
+.btn-primary[disabled]:active,
+fieldset[disabled] .btn-primary:active,
+.btn-primary.disabled.active,
+.btn-primary[disabled].active,
+fieldset[disabled] .btn-primary.active {
+    border-color: #fb2576;
+    background-color: #fb2576;
+}
+
+.btn-primary .badge {
+    color: #fb2576;
+    background-color: white;
+}
+
+.btn-lg {
+    padding: 15px 30px;
+}
