@@ -2,70 +2,30 @@ html {
     background-color: #1e1e1e;
 }
 
+
+
 body {
     font-family: 'Ubuntu', sans-serif;
     text-align: center;
     padding: 50px;
     color: #ffffff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
-.btn {
-    border-radius: 300px;
+p {
+    font-size: 20px;
 }
 
-.btn-primary {
-    border-color: #fb2576;
-    color: #fff;
+button {
+    font-family: 'Ubuntu', sans-serif;
     background-color: #fb2576;
-    -webkit-transition: all .35s;
-    -moz-transition: all .35s;
-    transition: all .35s;
-}
-
-.btn-primary:hover,
-.btn-primary:focus,
-.btn-primary.focus,
-.btn-primary:active,
-.btn-primary.active,
-.open > .dropdown-toggle.btn-primary {
-    border-color: white;
-    color: #fb2576;
-    background-color: white;
-}
-
-.btn-primary:active,
-.btn-primary.active,
-.open > .dropdown-toggle.btn-primary {
-    background-image: none;
-}
-
-.btn-primary.disabled,
-.btn-primary[disabled],
-fieldset[disabled] .btn-primary,
-.btn-primary.disabled:hover,
-.btn-primary[disabled]:hover,
-fieldset[disabled] .btn-primary:hover,
-.btn-primary.disabled:focus,
-.btn-primary[disabled]:focus,
-fieldset[disabled] .btn-primary:focus,
-.btn-primary.disabled.focus,
-.btn-primary[disabled].focus,
-fieldset[disabled] .btn-primary.focus,
-.btn-primary.disabled:active,
-.btn-primary[disabled]:active,
-fieldset[disabled] .btn-primary:active,
-.btn-primary.disabled.active,
-.btn-primary[disabled].active,
-fieldset[disabled] .btn-primary.active {
-    border-color: #fb2576;
-    background-color: #fb2576;
-}
-
-.btn-primary .badge {
-    color: #fb2576;
-    background-color: white;
-}
-
-.btn-lg {
-    padding: 15px 30px;
-}
+    border-radius: 100px;
+    border: none;
+    font-size: 20px;
+    padding: 14px 40px;
+    width: auto;
+    cursor: pointer;
+  }
