@@ -1,0 +1,21 @@
+html {
+    background-color: #1e1e1e;
+}
+
+body {
+    font-family: 'Ubuntu', sans-serif;
+    text-align: center;
+    padding: 50px;
+    color: #ffffff;
+}
+
+button {
+    font-family: 'Ubuntu', sans-serif;
+    background-color: #fb2576;
+    border-radius: 6px;
+    border: none;
+    padding: 10px;
+    width: 200px;
+    cursor: pointer;
+    color: #ffffff;
+  }
