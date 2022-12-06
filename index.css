@@ -22,6 +22,19 @@ p {
 button {
     font-family: 'Ubuntu', sans-serif;
     background-color: #fb2576;
+    color: #000;
+    border-radius: 100px;
+    border: none;
+    font-size: 20px;
+    padding: 14px 40px;
+    width: auto;
+    cursor: pointer;
+  }
+
+  button:hover {
+    font-family: 'Ubuntu', sans-serif;
+    background-color: #000;
+    color: #fb2576;
     border-radius: 100px;
     border: none;
     font-size: 20px;
