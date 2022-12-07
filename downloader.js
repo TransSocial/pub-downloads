@@ -1,19 +1,19 @@
 const apps = {
-    // Android: "https://transsocial.software/compiled/1.0/android/",
-    // iOS: "https://transsocial.software/compiled/1.0/ios/",
+    Android: "https://transsocial.software/compiled/1.0/android/",
+    iOS: "https://transsocial.software/compiled/1.0/ios/",
     Windows: "https://transsocial.software/compiled/1.0/windows/",
-    // Mac: "https://transsocial.software/compiled/1.0/macos/",
-    // Linux: "https://transsocial.software/compiled/1.0/linux/"
+    Mac: "https://transsocial.software/compiled/1.0/macos/",
+    Linux: "https://transsocial.software/compiled/1.0/linux/"
   };
   
   const platform = () => {
     let userAgent = navigator.userAgent || navigator.vendor || window.opera;
+    if (/Win/.test(userAgent)) return "Windows";
+    if (/Mac/.test(userAgent)) return "Mac";
+    if (/Linux/.test(userAgent)) return "Linux";
     if (/windows phone/i.test(userAgent)) return "Windows Phone";
     if (/android/i.test(userAgent)) return "Android";
-    if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) return "iOS";
-    if (navigator.appVersion.indexOf("Win")!=-1) return "Windows";
-    if (navigator.appVersion.indexOf("Mac")!=-1) return "Mac";;
-    if (navigator.appVersion.indexOf("Linux")!=-1) return "Linux";
+    if (/iPad|iPhone|iPod/.test(userAgent)) return "iOS";
     return null;
   };
   
