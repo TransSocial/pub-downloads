@@ -29,6 +29,7 @@ button {
     padding: 14px 40px;
     width: auto;
     cursor: pointer;
+    transition: all 0.3s;
   }
 
   button:hover {
